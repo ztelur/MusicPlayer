@@ -1,11 +1,13 @@
 package com.carpediem.randy.service;
 
+import com.carpediem.randy.service.view.MusicAdapter;
+
 import java.util.List;
 
 /**
  * Created by homer on 16-6-7.
  */
-public class MusicPlayerPresenter {
+public class MusicPlayerPresenter implements MusicAdapter.OnSongSelectListener{
     private Music mCurrentMusic;
     public List<Music> getMusicList() {
         return null;
@@ -23,6 +25,11 @@ public class MusicPlayerPresenter {
 
     }
     public void playPreSong() {
+
+    }
+
+    @Override
+    public void onSongSelected(Music music) {
 
     }
 }

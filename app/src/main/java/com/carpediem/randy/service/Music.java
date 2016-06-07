@@ -10,4 +10,7 @@ public class Music {
     public String getUrl() {
         return "";
     }
+    public String getName() {
+        return "name";
+    }
 }
